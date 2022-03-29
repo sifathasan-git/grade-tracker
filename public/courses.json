@@ -1,0 +1,145 @@
+[{
+  "_id": {
+    "$oid": "624087c7c716437ce8247255"
+  },
+  "name": "ENG103",
+  "credit": 3,
+  "gradeLetter": "C",
+  "gradePoint": 2,
+  "__v": 0,
+  "user": {
+    "$oid": "624086ffc716437ce824724f"
+  }
+},{
+  "_id": {
+    "$oid": "62408809c716437ce824725c"
+  },
+  "name": "CSE115",
+  "credit": 3,
+  "gradeLetter": "B",
+  "gradePoint": 3,
+  "__v": 0,
+  "user": {
+    "$oid": "624086ffc716437ce824724f"
+  }
+},{
+  "_id": {
+    "$oid": "62408820c716437ce8247260"
+  },
+  "name": "CSE115L",
+  "credit": 1,
+  "gradeLetter": "A",
+  "gradePoint": 4,
+  "__v": 0,
+  "user": {
+    "$oid": "624086ffc716437ce824724f"
+  }
+},{
+  "_id": {
+    "$oid": "62408834c716437ce8247264"
+  },
+  "name": "PBH101",
+  "credit": 3,
+  "gradeLetter": "A-",
+  "gradePoint": 3.7,
+  "__v": 0,
+  "user": {
+    "$oid": "624086ffc716437ce824724f"
+  }
+},{
+  "_id": {
+    "$oid": "62408884c716437ce824726b"
+  },
+  "name": "MAT125",
+  "credit": 3,
+  "gradeLetter": "C",
+  "gradePoint": 2,
+  "__v": 0,
+  "user": {
+    "$oid": "624086ffc716437ce824724f"
+  }
+},{
+  "_id": {
+    "$oid": "62408891c716437ce824726f"
+  },
+  "name": "POL191",
+  "credit": 3,
+  "gradeLetter": "B",
+  "gradePoint": 3,
+  "__v": 0,
+  "user": {
+    "$oid": "624086ffc716437ce824724f"
+  }
+},{
+  "_id": {
+    "$oid": "624088bfc716437ce8247276"
+  },
+  "name": "CSE215",
+  "credit": 3,
+  "gradeLetter": "A-",
+  "gradePoint": 3.7,
+  "__v": 0,
+  "user": {
+    "$oid": "624086ffc716437ce824724f"
+  }
+},{
+  "_id": {
+    "$oid": "624088cbc716437ce824727a"
+  },
+  "name": "CSE215L",
+  "credit": 1,
+  "gradeLetter": "A",
+  "gradePoint": 4,
+  "__v": 0,
+  "user": {
+    "$oid": "624086ffc716437ce824724f"
+  }
+},{
+  "_id": {
+    "$oid": "6240891bc716437ce8247281"
+  },
+  "name": "CSE225",
+  "credit": 3,
+  "gradeLetter": "B+",
+  "gradePoint": 3.3,
+  "__v": 0,
+  "user": {
+    "$oid": "624086ffc716437ce824724f"
+  }
+},{
+  "_id": {
+    "$oid": "6240892cc716437ce8247285"
+  },
+  "name": "EEE141",
+  "credit": 3,
+  "gradeLetter": "A-",
+  "gradePoint": 3.7,
+  "__v": 0,
+  "user": {
+    "$oid": "624086ffc716437ce824724f"
+  }
+},{
+  "_id": {
+    "$oid": "62408939c716437ce8247289"
+  },
+  "name": "EEE141L",
+  "credit": 1,
+  "gradeLetter": "B",
+  "gradePoint": 3,
+  "__v": 0,
+  "user": {
+    "$oid": "624086ffc716437ce824724f"
+  }
+},{
+  "_id": {
+    "$oid": "6240a712ba9d3994b8289aa8"
+  },
+  "user": {
+    "$oid": "624086ffc716437ce824724f"
+  },
+  "name": "MAT130",
+  "credit": 3,
+  "gradeLetter": "C+",
+  "gradePoint": 2.3,
+  "__v": 0
+}]

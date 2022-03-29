@@ -7,10 +7,15 @@ router.get("/", async (req, res) => {
   const courses = await Course.find().select("-__v").sort("name");
   res.send(courses);
 });
+router.get("/:id", async (req, res) => {
+  const courses = await Course.find({ user: req.params.id });
+  res.send(courses);
+});
 
 router.post("/", async (req, res) => {
   const semesterId = req.body.semesterId;
   let course = new Course({
+    user: req.body.user,
     name: req.body.name,
     credit: req.body.credit,
     gradeLetter: req.body.gradeLetter,
@@ -22,13 +27,7 @@ router.post("/", async (req, res) => {
 });
 
 router.put("/:id", async (req, res) => {
-  const course = await Course.findByIdAndUpdate(
-    req.params.id,
-    { name: req.body.name },
-    {
-      new: true,
-    }
-  );
+  const course = await Course.findById(req.params.id);
 
   if (!course)
     return res.status(404).send("The course with the given ID was not found.");

@@ -1,86 +1,56 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
-body{
-    background-color: #e8fdff;
-    font-family: 'Ubuntu', sans-serif;
+body {
+  background: linear-gradient(to bottom, #beeef6, #bdedf5);
+  font-family: "Ubuntu", sans-serif;
 }
-nav{
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 5rem;
+  width: 100vw;
+  height: 8vh;
+  background-color: rgb(43, 37, 37);
+  h1 {
+    color: white;
+  }
+  ul {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0rem 5rem;
-    width: 100vw;
-    height: 8vh;
-    background-color: rgb(43, 37, 37);
-    h1{
-        
-        color: white;
-    }
-    ul{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
-        li{
-            color: white;
-            cursor: pointer;
-        }
-    }
-}
-.container{
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    height: 100vh;
-    width: 100vw;
-    overflow-x: hidden;
-    
-    .card{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        padding: 2rem;
-        gap: 1rem;
-        width: 16rem;
-        height: 10rem;
-        border-radius: 5px;
-        box-shadow: 5px 5px 15px rgba(71, 71, 71, .2);
-        background-color: #9bf7ef;
-        .semesterName{
-            display: flex;
-            width: 100%;
-            justify-content: space-between;
-        }
-        h1{
-            font-size: 1rem;
-            color: rgb(32, 32, 32);
-        }
-        p{
-            color: gray;
-            font-size: .8rem;
-        }
+    li {
+      color: white;
+      cursor: pointer;
     }
-    .cgpaCredit{
-        overflow: hidden;
-    }
-    .semesters{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        align-items: center;
-        gap: 2rem;
-        height: 80vh;
-        width: 80vw;
-        overflow: auto;
-    }
+  }
 }
-
-
-@import "gradecount";
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding-top: 2rem;
+  gap: 2rem;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  cursor: pointer;
+}
+::-webkit-scrollbar-thumb {
+  background: #313131;
+  border-radius: 50px;
+  cursor: pointer;
+}
+@import "cgpa";
+@import "login";
+@import "signup";
+@import "semester";
+@import "academicInfo";

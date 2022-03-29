@@ -1,5 +1,6 @@
 const Joi = require("joi");
 const Semester = require("./semester");
+const Course = require("./course");
 const mongoose = require("mongoose");
 
 const User = mongoose.model(

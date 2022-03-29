@@ -15,9 +15,19 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="login">
+    <div class="signup">
       <form class="formStyle">
         <div class="inputs">
+          <div class="name">
+            <div class="input">
+              <h1>First Name</h1>
+              <input type="text" placeholder="John" required />
+            </div>
+            <div class="input">
+              <h1>Last Name</h1>
+              <input type="text" placeholder="Doe" required />
+            </div>
+          </div>
           <div class="input">
             <h1>Username</h1>
             <input type="text" placeholder="Enter Username" required />
@@ -30,11 +40,14 @@
               required
             />
           </div>
+          <div class="input">
+            <h1>E-mail</h1>
+            <input type="text" placeholder="example@gmail.com" required />
+          </div>
         </div>
         <button class="loginBtn">Login</button>
         <div class="atags">
-          <p>Forgot Password? <span>Reset</span></p>
-          <p>Don't have an account? <span>Signup</span></p>
+          <p>Have an account? <span>Login</span></p>
         </div>
       </form>
     </div>
