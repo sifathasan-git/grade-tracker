@@ -50,6 +50,11 @@ nav ul li {
   cursor: pointer;
 }
 
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -260,20 +265,21 @@ nav ul li {
   gap: 0.5rem;
 }
 
-.login .formStyle .atags p {
+.login .formStyle .atags a {
   font-size: 1rem;
   font-weight: 400;
   cursor: pointer;
+  text-decoration: none;
   color: #d1d1d1;
 }
 
-.login .formStyle .atags p span {
+.login .formStyle .atags a span {
   color: #50c2c9;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
 
-.login .formStyle .atags p span:hover {
+.login .formStyle .atags a span:hover {
   color: #5088c9;
 }
 
@@ -473,20 +479,21 @@ nav ul li {
   gap: 0.5rem;
 }
 
-.signup .formStyle .atags p {
+.signup .formStyle .atags a {
   font-size: 1rem;
   font-weight: 400;
+  text-decoration: none;
   cursor: pointer;
   color: #d1d1d1;
 }
 
-.signup .formStyle .atags p span {
+.signup .formStyle .atags a span {
   color: #50c2c9;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
 
-.signup .formStyle .atags p span:hover {
+.signup .formStyle .atags a span:hover {
   color: #5088c9;
 }
 
