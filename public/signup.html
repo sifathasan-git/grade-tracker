@@ -10,31 +10,38 @@
       href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../src/sass/index.css" />
+    <link rel="stylesheet" href="../src/style/index.css" />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Document</title>
   </head>
   <body>
     <div class="signup">
-      <form class="formStyle">
+      <form id="signupForm" class="formStyle">
+        <img src="../src/image/logo.svg" alt="" />
         <div class="inputs">
           <div class="name">
             <div class="input">
               <h1>First Name</h1>
-              <input type="text" placeholder="John" required />
+              <input id="fname" type="text" placeholder="John" required />
             </div>
             <div class="input">
               <h1>Last Name</h1>
-              <input type="text" placeholder="Doe" required />
+              <input id="lname" type="text" placeholder="Doe" required />
             </div>
           </div>
           <div class="input">
             <h1>Username</h1>
-            <input type="text" placeholder="Enter Username" required />
+            <input
+              id="signupUsername"
+              type="text"
+              placeholder="Enter Username"
+              required
+            />
           </div>
           <div class="input">
             <h1>Password</h1>
             <input
+              id="signupPassword"
               type="password"
               placeholder="6 character long password"
               required
@@ -42,14 +49,20 @@
           </div>
           <div class="input">
             <h1>E-mail</h1>
-            <input type="text" placeholder="example@gmail.com" required />
+            <input
+              id="email"
+              type="text"
+              placeholder="example@gmail.com"
+              required
+            />
           </div>
         </div>
-        <button class="loginBtn">Login</button>
+        <button id="signup" class="loginBtn">Signup</button>
         <div class="atags">
           <a href="login.html">Have an account? <span>Login</span></a>
         </div>
       </form>
     </div>
   </body>
+  <script type="module" src="../src/scripts/signup.js"></script>
 </html>

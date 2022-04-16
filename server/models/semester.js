@@ -23,6 +23,10 @@ const semesterSchema = new mongoose.Schema({
   gpa: {
     type: Number,
   },
+  isActive: {
+    type: Boolean,
+    required: true,
+  },
 });
 
 const Semester = mongoose.model("Semester", semesterSchema);

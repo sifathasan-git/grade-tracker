@@ -1,0 +1,1391 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#beeef6), to(#bdedf5));
+  background: linear-gradient(to bottom, #beeef6, #bdedf5);
+  font-family: "Ubuntu", sans-serif;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0rem 5rem;
+  width: 100vw;
+  height: 8vh;
+  background-color: #2b2525;
+}
+
+nav h1 {
+  color: white;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+}
+
+nav ul li {
+  list-style: none;
+  color: white;
+  cursor: pointer;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  padding-top: 2rem;
+  gap: 2rem;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #313131;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: -webkit-gradient(linear, left top, left bottom, from(#beeef6), to(#bdedf5));
+  background: linear-gradient(to bottom, #beeef6, #bdedf5);
+}
+
+.login .formStyle {
+  width: 25vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem 1rem;
+  border-radius: 8px;
+  background-color: #f6f6f6;
+}
+
+.login .formStyle img {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+}
+
+.login .formStyle .inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  gap: 1rem;
+  margin-top: 2rem;
+  overflow: visible;
+}
+
+.login .formStyle .inputs .input {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 4.2rem;
+  width: 100%;
+}
+
+.login .formStyle .inputs .input h1 {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  padding: 0px 5px;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  font-size: 1rem;
+  font-weight: 400;
+  color: black;
+  background-color: #f6f6f6;
+}
+
+.login .formStyle .inputs .input img {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  height: 1.2rem;
+}
+
+.login .formStyle .inputs .input .active {
+  color: #50c2c9;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.login .formStyle .inputs .input .error {
+  border: 1px solid red;
+}
+
+.login .formStyle .inputs .input input {
+  height: 3.2rem;
+  width: 100%;
+  padding: 15px 10px 10px 30px;
+  background-color: transparent;
+  color: black;
+  font-size: 0.9rem;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #d1d1d1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.login .formStyle .inputs .input input::-webkit-input-placeholder {
+  color: #ab9f95;
+}
+
+.login .formStyle .inputs .input input:-ms-input-placeholder {
+  color: #ab9f95;
+}
+
+.login .formStyle .inputs .input input::-ms-input-placeholder {
+  color: #ab9f95;
+}
+
+.login .formStyle .inputs .input input::placeholder {
+  color: #ab9f95;
+}
+
+.login .formStyle .inputs .input input:focus,
+.login .formStyle .inputs .input textarea:focus,
+.login .formStyle .inputs .input select:focus {
+  outline: none;
+  padding: 14px 9px 9px 29px;
+  border: 2px solid #50c2c9;
+}
+
+.login .formStyle .loginBtn {
+  width: 80%;
+  height: 2.8rem;
+  background-color: #50c2c9;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  margin-top: 2rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.login .formStyle .loginBtn:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.login .formStyle .qrloginSection {
+  display: none;
+}
+
+.login .formStyle .atags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-top: 1rem;
+  gap: 0.5rem;
+}
+
+.login .formStyle .atags a {
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
+  text-decoration: none;
+  color: #d1d1d1;
+}
+
+.login .formStyle .atags a span {
+  color: #50c2c9;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.login .formStyle .atags a span:hover {
+  color: #5088c9;
+}
+
+.semesters .semesterCard .semester-slider-button {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 27px;
+  height: 18px;
+  top: 10px;
+  left: 10px;
+  /* Rounded sliders */
+}
+
+.semesters .semesterCard .semester-slider-button .switch {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 25px;
+  height: 15px;
+}
+
+.semesters .semesterCard .semester-slider-button .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.semesters .semesterCard .semester-slider-button .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.semesters .semesterCard .semester-slider-button .slider:before {
+  position: absolute;
+  content: "";
+  height: 10px;
+  width: 10px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.semesters .semesterCard .semester-slider-button input:checked + .slider {
+  background-color: #2196f3;
+}
+
+.semesters .semesterCard .semester-slider-button input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #2196f3;
+          box-shadow: 0 0 1px #2196f3;
+}
+
+.semesters .semesterCard .semester-slider-button input:checked + .slider:before {
+  -webkit-transform: translateX(9px);
+  transform: translateX(9px);
+}
+
+.semesters .semesterCard .semester-slider-button .slider.round {
+  border-radius: 36px;
+}
+
+.semesters .semesterCard .semester-slider-button .slider.round:before {
+  border-radius: 50%;
+}
+
+.semesters .semesterCard .course-slider-button {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 27px;
+  height: 18px;
+  top: 10px;
+  left: 10px;
+  /* Rounded sliders */
+}
+
+.semesters .semesterCard .course-slider-button .switch {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 25px;
+  height: 15px;
+}
+
+.semesters .semesterCard .course-slider-button .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.semesters .semesterCard .course-slider-button .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.semesters .semesterCard .course-slider-button .slider:before {
+  position: absolute;
+  content: "";
+  height: 10px;
+  width: 10px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.semesters .semesterCard .course-slider-button input:checked + .slider {
+  background-color: #2196f3;
+}
+
+.semesters .semesterCard .course-slider-button input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #2196f3;
+          box-shadow: 0 0 1px #2196f3;
+}
+
+.semesters .semesterCard .course-slider-button input:checked + .slider:before {
+  -webkit-transform: translateX(9px);
+  transform: translateX(9px);
+}
+
+.semesters .semesterCard .course-slider-button .slider.round {
+  border-radius: 36px;
+}
+
+.semesters .semesterCard .course-slider-button .slider.round:before {
+  border-radius: 50%;
+}
+
+.signup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: -webkit-gradient(linear, left top, left bottom, from(#beeef6), to(#bdedf5));
+  background: linear-gradient(to bottom, #beeef6, #bdedf5);
+}
+
+.signup .formStyle {
+  width: 25vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem 1rem;
+  border-radius: 8px;
+  background-color: #f6f6f6;
+}
+
+.signup .formStyle img {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+}
+
+.signup .formStyle .name {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+}
+
+.signup .formStyle .inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  gap: 1rem;
+  margin-top: 2rem;
+  overflow: visible;
+}
+
+.signup .formStyle .inputs .input {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 4.2rem;
+  width: 100%;
+}
+
+.signup .formStyle .inputs .input h1 {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  padding: 0px 5px;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  font-size: 1rem;
+  font-weight: 400;
+  color: black;
+  background-color: #f6f6f6;
+}
+
+.signup .formStyle .inputs .input img {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  height: 1.2rem;
+}
+
+.signup .formStyle .inputs .input .active {
+  color: #50c2c9;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.signup .formStyle .inputs .input .error {
+  border: 1px solid red;
+}
+
+.signup .formStyle .inputs .input input {
+  height: 3.2rem;
+  width: 100%;
+  padding: 15px 10px 10px 30px;
+  background-color: transparent;
+  color: black;
+  font-size: 0.9rem;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #d1d1d1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.signup .formStyle .inputs .input input::-webkit-input-placeholder {
+  color: #ab9f95;
+}
+
+.signup .formStyle .inputs .input input:-ms-input-placeholder {
+  color: #ab9f95;
+}
+
+.signup .formStyle .inputs .input input::-ms-input-placeholder {
+  color: #ab9f95;
+}
+
+.signup .formStyle .inputs .input input::placeholder {
+  color: #ab9f95;
+}
+
+.signup .formStyle .inputs .input input:focus,
+.signup .formStyle .inputs .input textarea:focus,
+.signup .formStyle .inputs .input select:focus {
+  outline: none;
+  padding: 14px 9px 9px 29px;
+  border: 2px solid #50c2c9;
+}
+
+.signup .formStyle .loginBtn {
+  width: 80%;
+  height: 2.8rem;
+  background-color: #50c2c9;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  margin-top: 2rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.signup .formStyle .loginBtn:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.signup .formStyle .qrloginSection {
+  display: none;
+}
+
+.signup .formStyle .atags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-top: 1rem;
+  gap: 0.5rem;
+}
+
+.signup .formStyle .atags a {
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: none;
+  cursor: pointer;
+  color: #d1d1d1;
+}
+
+.signup .formStyle .atags a span {
+  color: #50c2c9;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.signup .formStyle .atags a span:hover {
+  color: #5088c9;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -2rem;
+  height: 100vh;
+  width: 100vw;
+}
+
+.card .settings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 80vh;
+  width: 80vw;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 2rem 5rem;
+}
+
+.card .settings h1 {
+  border-bottom: 1px solid gray;
+  padding: 1rem 0rem;
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.card .settings .settings-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 10vh;
+  width: 100%;
+  border-bottom: 1px solid gray;
+}
+
+.card .settings .settings-card p {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.card .settings .settings-card button {
+  bottom: 1rem;
+  padding: 0.3rem;
+  border: 1px solid rgba(109, 109, 109, 0.624);
+  border-radius: 3px;
+  background: -webkit-gradient(linear, right top, left top, from(#a2f4ff), to(#c7f2f8));
+  background: linear-gradient(to left, #a2f4ff, #c7f2f8);
+  font-size: 0.8rem;
+  color: #236185;
+  cursor: pointer;
+  -webkit-transition: all 1s ease 0s;
+  transition: all 1s ease 0s;
+}
+
+.card .settings .settings-card button:hover {
+  background: #36aef3;
+  color: white;
+}
+
+.editWindowDiv .editWindow {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 100;
+}
+
+.editWindowDiv .editWindow .editInputWindow {
+  width: 25vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem 1rem;
+  border-radius: 8px;
+  background-color: #f6f6f6;
+}
+
+.editWindowDiv .editWindow .editInputWindow h1 {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.editWindowDiv .editWindow .editInputWindow input {
+  height: 2rem;
+  width: 100%;
+  padding: 5px;
+  background-color: transparent;
+  color: black;
+  font-size: 1rem;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #d1d1d1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.editWindowDiv .editWindow .editInputWindow input::-webkit-input-placeholder {
+  color: #ab9f95;
+}
+
+.editWindowDiv .editWindow .editInputWindow input:-ms-input-placeholder {
+  color: #ab9f95;
+}
+
+.editWindowDiv .editWindow .editInputWindow input::-ms-input-placeholder {
+  color: #ab9f95;
+}
+
+.editWindowDiv .editWindow .editInputWindow input::placeholder {
+  color: #ab9f95;
+}
+
+.editWindowDiv .editWindow .editInputWindow input:focus,
+.editWindowDiv .editWindow .editInputWindow textarea:focus,
+.editWindowDiv .editWindow .editInputWindow select:focus {
+  outline: none;
+  border: 2px solid #50c2c9;
+}
+
+.editWindowDiv .editWindow .editInputWindow .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100%;
+}
+
+.editWindowDiv .editWindow .editInputWindow .button button {
+  height: 2rem;
+  width: 4rem;
+  border: 1px solid rgba(109, 109, 109, 0.624);
+  border-radius: 3px;
+  background: -webkit-gradient(linear, right top, left top, from(#a2f4ff), to(#c7f2f8));
+  background: linear-gradient(to left, #a2f4ff, #c7f2f8);
+  font-size: 1rem;
+  color: #236185;
+  cursor: pointer;
+  -webkit-transition: all 1s ease 0s;
+  transition: all 1s ease 0s;
+}
+
+.editWindowDiv .editWindow .editInputWindow .button button:hover {
+  background: #36aef3;
+  color: white;
+}
+
+.semesterSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-height: 80vh;
+  width: 50vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  background: -webkit-gradient(linear, right top, left bottom, from(rgba(199, 242, 248, 0.3)), to(rgba(255, 255, 255, 0.7)));
+  background: linear-gradient(to left bottom, rgba(199, 242, 248, 0.3), rgba(255, 255, 255, 0.7));
+}
+
+.semesterSection .topBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(199, 242, 248, 0.3)), to(rgba(255, 255, 255, 0.7)));
+  background: linear-gradient(270deg, rgba(199, 242, 248, 0.3), rgba(255, 255, 255, 0.7));
+  border-radius: 5px;
+  height: 4rem;
+  padding: 10px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.semesterSection .topBar h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+.semesterSection .topBar img {
+  padding: 0.8rem 0.5rem;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  background-color: #caf2f8;
+  cursor: pointer;
+}
+
+.semesterSection .topBar button {
+  bottom: 1rem;
+  height: 2rem;
+  width: 8rem;
+  border: 1px solid rgba(109, 109, 109, 0.624);
+  border-radius: 3px;
+  background: -webkit-gradient(linear, right top, left top, from(#a2f4ff), to(#c7f2f8));
+  background: linear-gradient(to left, #a2f4ff, #c7f2f8);
+  font-size: 1rem;
+  color: #236185;
+  cursor: pointer;
+  -webkit-transition: all 1s ease 0s;
+  transition: all 1s ease 0s;
+}
+
+.semesterSection .topBar button:hover {
+  background: #36aef3;
+  color: white;
+}
+
+.semesterSection .semesters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1rem;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+.semesterSection .semesters .semesterCard {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  min-width: 20rem;
+  height: 10rem;
+  padding: 1.5rem;
+  margin: 0.5rem 0.5rem;
+  border-radius: 10px;
+  background: -webkit-gradient(linear, right top, left top, from(#dbfdff), to(#f5fdff));
+  background: linear-gradient(to left, #dbfdff, #f5fdff);
+  -webkit-box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+          box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+  cursor: pointer;
+}
+
+.semesterSection .semesters .semesterCard .inActive {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 20rem;
+  height: 10rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.semesterSection .semesters .semesterCard h2 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 5px 0px;
+  color: black;
+}
+
+.semesterSection .semesters .semesterCard .semesterName {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.semesterSection .semesters .semesterCard .semesterName h1 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 5px 0px;
+  color: black;
+}
+
+.semesterSection .semesters .semesterCard .courseName {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 14rem;
+  overflow: hidden;
+}
+
+.semesterSection .semesters .semesterCard .courseName p {
+  font-size: 0.8rem;
+  padding-right: 5px;
+  color: rgba(0, 0, 0, 0.644);
+}
+
+.semesterSection .semesters .semesterCard .menu {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 20px;
+  top: 0.5rem;
+  right: 0.5rem;
+  cursor: pointer;
+}
+
+.semesterSection .semesters .semesterCard .menu img {
+  height: 20px;
+}
+
+.addWindow {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 100;
+}
+
+.addWindow .inputWindow {
+  width: 25vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem 1rem;
+  border-radius: 8px;
+  background-color: #f6f6f6;
+}
+
+.addWindow .inputWindow h1 {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.addWindow .inputWindow input {
+  height: 2rem;
+  width: 100%;
+  padding: 5px;
+  background-color: transparent;
+  color: black;
+  font-size: 1rem;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #d1d1d1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.addWindow .inputWindow select {
+  height: 2rem;
+  width: 100%;
+  padding: 5px;
+  background-color: transparent;
+  color: black;
+  font-size: 1rem;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #d1d1d1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.addWindow .inputWindow input::-webkit-input-placeholder {
+  color: #ab9f95;
+}
+
+.addWindow .inputWindow input:-ms-input-placeholder {
+  color: #ab9f95;
+}
+
+.addWindow .inputWindow input::-ms-input-placeholder {
+  color: #ab9f95;
+}
+
+.addWindow .inputWindow input::placeholder {
+  color: #ab9f95;
+}
+
+.addWindow .inputWindow input:focus,
+.addWindow .inputWindow textarea:focus,
+.addWindow .inputWindow select:focus {
+  outline: none;
+  border: 2px solid #50c2c9;
+}
+
+.addWindow .inputWindow .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100%;
+}
+
+.addWindow .inputWindow .button button {
+  height: 2rem;
+  width: 4rem;
+  border: 1px solid rgba(109, 109, 109, 0.624);
+  border-radius: 3px;
+  background: -webkit-gradient(linear, right top, left top, from(#a2f4ff), to(#c7f2f8));
+  background: linear-gradient(to left, #a2f4ff, #c7f2f8);
+  font-size: 1rem;
+  color: #236185;
+  cursor: pointer;
+  -webkit-transition: all 1s ease 0s;
+  transition: all 1s ease 0s;
+}
+
+.addWindow .inputWindow .button button:hover {
+  background: #36aef3;
+  color: white;
+}
+
+.academicInfoSection {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 80vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 40vw;
+}
+
+.academicInfoSection .cgpa {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 10rem;
+  width: 40vw;
+  position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.academicInfoSection .cgpa .circle {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.academicInfoSection .cgpa .circle .semesterCgpa {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  background: white;
+  z-index: 10;
+}
+
+.academicInfoSection .cgpa .circle .semesterCgpa h1 {
+  padding-top: 2rem;
+  font-size: 1.2rem;
+}
+
+.academicInfoSection .cgpa .circle .semesterCgpa p {
+  text-align: center;
+  width: 5.5rem;
+  font-size: 0.9rem;
+}
+
+.academicInfoSection .cgpa .circle .semesterCgpa .cgpaLimit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 7rem;
+}
+
+.academicInfoSection .cgpa .circle .semesterCgpa .cgpaLimit p {
+  padding-top: 0.8rem;
+  font-size: 0.7rem;
+}
+
+.academicInfoSection .cgpa .circle svg {
+  position: absolute;
+  top: 0.1rem;
+  left: -0.5rem;
+  height: 9rem;
+  padding: 1rem;
+  overflow: visible;
+  transform-box: fill-box;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: rotate(135deg) scaleX(-1);
+          transform: rotate(135deg) scaleX(-1);
+  z-index: 10;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.academicInfoSection .cgpa .circle svg #circle {
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.academicInfoSection .cgpa .creditInfoCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20rem;
+  height: 5rem;
+  padding: 1rem;
+  margin-right: 0.5rem;
+  border-radius: 5px;
+  background: -webkit-gradient(linear, right top, left top, from(#dbfdff), to(#f5fdff));
+  background: linear-gradient(to left, #dbfdff, #f5fdff);
+  -webkit-box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+          box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+  cursor: pointer;
+}
+
+.academicInfoSection .cgpa .creditInfoCard h1 {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 5px 0px;
+  color: black;
+}
+
+.academicInfoSection .gradeCards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 80%;
+  overflow: auto;
+}
+
+.academicInfoSection .gradeCards .gradeCard {
+  background: -webkit-gradient(linear, right top, left top, from(#dbfdff), to(#f5fdff));
+  background: linear-gradient(270deg, #dbfdff, #f5fdff);
+  border-radius: 5px;
+  -webkit-box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+          box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 5rem;
+  margin: 0.5rem;
+  min-width: 11rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.academicInfoSection .gradeCards .gradeCard .frow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.academicInfoSection .gradeCards .gradeCard .frow h1 {
+  color: #000;
+  font-size: 1rem;
+}
+
+.academicInfoSection .gradeCards .gradeCard p {
+  color: rgba(71, 71, 71, 0.637);
+  font-size: 0.8rem;
+}
+/*# sourceMappingURL=index.css.map */

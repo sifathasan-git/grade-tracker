@@ -10,28 +10,35 @@
       href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../src/sass/index.css" />
+    <link rel="stylesheet" href="../src/style/index.css" />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Document</title>
   </head>
   <body>
     <div class="login">
-      <form class="formStyle">
+      <form id="loginForm" class="formStyle">
+        <img src="../src/image/logo.svg" alt="" />
         <div class="inputs">
           <div class="input">
             <h1>Username</h1>
-            <input type="text" placeholder="Enter Username" required />
+            <input
+              id="loginUsername"
+              type="text"
+              placeholder="Enter Username"
+              required
+            />
           </div>
           <div class="input">
             <h1>Password</h1>
             <input
+              id="loginPassword"
               type="password"
               placeholder="6 character long password"
               required
             />
           </div>
         </div>
-        <button class="loginBtn">Login</button>
+        <button id="login" class="loginBtn">Login</button>
         <div class="atags">
           <a>Forgot Password? <span>Reset</span></a>
           <a href="signup.html">Don't have an account? <span>Signup</span></a>
@@ -39,4 +46,5 @@
       </form>
     </div>
   </body>
+  <script type="module" src="../src/scripts/login.js"></script>
 </html>

@@ -1,0 +1,274 @@
+[{
+  "_id": {
+    "$oid": "6244b55e43a902ac0c61f5b6"
+  },
+  "user": {
+    "$oid": "624086ffc716437ce824724f"
+  },
+  "semester": "6244b54a43a902ac0c61f5b3",
+  "name": "HIS101",
+  "credit": 3,
+  "gradeLetter": "B+",
+  "gradePoint": 3.3,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6244b56d43a902ac0c61f5ba"
+  },
+  "user": {
+    "$oid": "624086ffc716437ce824724f"
+  },
+  "semester": "6244b54a43a902ac0c61f5b3",
+  "name": "EEE111",
+  "credit": 3,
+  "gradeLetter": "B-",
+  "gradePoint": 2.7,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6244b58043a902ac0c61f5be"
+  },
+  "user": {
+    "$oid": "624086ffc716437ce824724f"
+  },
+  "semester": "6244b54a43a902ac0c61f5b3",
+  "name": "CSE438",
+  "credit": 3,
+  "gradeLetter": "C+",
+  "gradePoint": 2.3,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6244b58e43a902ac0c61f5c2"
+  },
+  "user": {
+    "$oid": "624086ffc716437ce824724f"
+  },
+  "semester": "6244b54a43a902ac0c61f5b3",
+  "name": "MAT350",
+  "credit": 3,
+  "gradeLetter": "D",
+  "gradePoint": 1,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6244b59f43a902ac0c61f5c6"
+  },
+  "user": {
+    "$oid": "624086ffc716437ce824724f"
+  },
+  "semester": "6244b54a43a902ac0c61f5b3",
+  "name": "EEE111L",
+  "credit": 1,
+  "gradeLetter": "A",
+  "gradePoint": 4,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6244b5a743a902ac0c61f5ca"
+  },
+  "user": {
+    "$oid": "624086ffc716437ce824724f"
+  },
+  "semester": "6244b54a43a902ac0c61f5b3",
+  "name": "CSE299",
+  "credit": 1,
+  "gradeLetter": "A",
+  "gradePoint": 4,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6244b5cd43a902ac0c61f5d1"
+  },
+  "user": {
+    "$oid": "624086ffc716437ce824724f"
+  },
+  "semester": "6244b5b843a902ac0c61f5ce",
+  "name": "ECO101",
+  "credit": 3,
+  "gradeLetter": "A-",
+  "gradePoint": 3.7,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6244b5d943a902ac0c61f5d5"
+  },
+  "user": {
+    "$oid": "624086ffc716437ce824724f"
+  },
+  "semester": "6244b5b843a902ac0c61f5ce",
+  "name": "ENG111",
+  "credit": 3,
+  "gradeLetter": "A",
+  "gradePoint": 4,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6244b5e343a902ac0c61f5d9"
+  },
+  "user": {
+    "$oid": "624086ffc716437ce824724f"
+  },
+  "semester": "6244b5b843a902ac0c61f5ce",
+  "name": "ENG115",
+  "credit": 3,
+  "gradeLetter": "A",
+  "gradePoint": 4,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6244b5ef43a902ac0c61f5dd"
+  },
+  "user": {
+    "$oid": "624086ffc716437ce824724f"
+  },
+  "semester": "6244b5b843a902ac0c61f5ce",
+  "name": "CSE499A",
+  "credit": 1.5,
+  "gradeLetter": "A",
+  "gradePoint": 4,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6244b5ff43a902ac0c61f5e1"
+  },
+  "user": {
+    "$oid": "624086ffc716437ce824724f"
+  },
+  "semester": "6244b5b843a902ac0c61f5ce",
+  "name": "HIS102",
+  "credit": 3,
+  "gradeLetter": "B+",
+  "gradePoint": 3.3,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6244b61e43a902ac0c61f5e8"
+  },
+  "user": {
+    "$oid": "624086ffc716437ce824724f"
+  },
+  "semester": "6244b60643a902ac0c61f5e5",
+  "name": "CHE101",
+  "credit": 3,
+  "gradeLetter": "B",
+  "gradePoint": 3,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6244b62b43a902ac0c61f5ec"
+  },
+  "user": {
+    "$oid": "624086ffc716437ce824724f"
+  },
+  "semester": "6244b60643a902ac0c61f5e5",
+  "name": "CSE331",
+  "credit": 3,
+  "gradeLetter": "A-",
+  "gradePoint": 3.7,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6244b63643a902ac0c61f5f0"
+  },
+  "user": {
+    "$oid": "624086ffc716437ce824724f"
+  },
+  "semester": "6244b60643a902ac0c61f5e5",
+  "name": "CSE482",
+  "credit": 3,
+  "gradeLetter": "A-",
+  "gradePoint": 3.7,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6244b64543a902ac0c61f5f4"
+  },
+  "user": {
+    "$oid": "624086ffc716437ce824724f"
+  },
+  "semester": "6244b60643a902ac0c61f5e5",
+  "name": "BIO103",
+  "credit": 3,
+  "gradeLetter": "A",
+  "gradePoint": 4,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6244b65443a902ac0c61f5f8"
+  },
+  "user": {
+    "$oid": "624086ffc716437ce824724f"
+  },
+  "semester": "6244b60643a902ac0c61f5e5",
+  "name": "CSE173",
+  "credit": 3,
+  "gradeLetter": "C+",
+  "gradePoint": 2.3,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6244b66343a902ac0c61f5fc"
+  },
+  "user": {
+    "$oid": "624086ffc716437ce824724f"
+  },
+  "semester": "6244b60643a902ac0c61f5e5",
+  "name": "CSE499B",
+  "credit": 1.5,
+  "gradeLetter": "A",
+  "gradePoint": 4,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6244b68343a902ac0c61f603"
+  },
+  "user": {
+    "$oid": "624086ffc716437ce824724f"
+  },
+  "semester": "6244b67043a902ac0c61f600",
+  "name": "MAT120",
+  "credit": 3,
+  "gradeLetter": "C",
+  "gradePoint": 2,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6244b68c43a902ac0c61f607"
+  },
+  "user": {
+    "$oid": "624086ffc716437ce824724f"
+  },
+  "semester": "6244b67043a902ac0c61f600",
+  "name": "CSE411",
+  "credit": 3,
+  "gradeLetter": "A",
+  "gradePoint": 4,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6244b69d43a902ac0c61f60b"
+  },
+  "user": {
+    "$oid": "624086ffc716437ce824724f"
+  },
+  "semester": "6244b67043a902ac0c61f600",
+  "name": "MAT361",
+  "credit": 3,
+  "gradeLetter": "B-",
+  "gradePoint": 2.7,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6244b6ac43a902ac0c61f60f"
+  },
+  "user": {
+    "$oid": "624086ffc716437ce824724f"
+  },
+  "semester": "6244b67043a902ac0c61f600",
+  "name": "BIO103L",
+  "credit": 1,
+  "gradeLetter": "B+",
+  "gradePoint": 3.3,
+  "__v": 0
+}]

@@ -6,6 +6,10 @@ const courseSchema = new mongoose.Schema({
     ref: "User",
     required: true,
   },
+  semester: {
+    type: String,
+    required: true,
+  },
   name: {
     type: String,
     required: true,
@@ -20,6 +24,10 @@ const courseSchema = new mongoose.Schema({
   },
   gradePoint: {
     type: Number,
+    required: true,
+  },
+  isActive: {
+    type: Boolean,
     required: true,
   },
 });

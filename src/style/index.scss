@@ -29,6 +29,7 @@ nav {
         text-decoration: none;
         color: white;
       }
+      list-style: none;
       color: white;
       cursor: pointer;
     }
@@ -53,7 +54,11 @@ nav {
   border-radius: 50px;
   cursor: pointer;
 }
+@import "cgpa";
 @import "login";
+@import "slider";
 @import "signup";
+@import "settings";
 @import "semester";
+@import "addWindow";
 @import "academicInfo";

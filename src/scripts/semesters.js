@@ -3,9 +3,15 @@ export const renderSemester = (semesters) => {
   semesters.forEach((semester) => {
     const gpa = semesterGpa(semester.courses);
     const courseName = semesterCoursesName(semester.courses);
+    let inActive = "";
+    let checked = "checked";
+    if (!semester.isActive) {
+      inActive = `<div class="inActive"></div>`;
+      checked = "";
+    }
     semestersHTML =
       semestersHTML +
-      `<div class="semesterCard"><div class="semesterName"><h1>${semester.name}</h1><h2>${gpa}</h2></div><div class="courseName"><p>${courseName}</p></div><div class="menu"><img id="semesterDelete" src="../src/image/trash.svg" alt="" /></div></div>`;
+      `<div id=${semester._id} class="semesterCard">${inActive}<div id='semester-slider-button' class="semester-slider-button"><label class="switch"><input type="checkbox" ${checked} /><span class="slider round"></span></label></div><div class="semesterName"><h1>${semester.name}</h1><h2>${gpa}</h2></div><div class="courseName"><p>${courseName}</p></div><div class="menu"><img class="semesterDelete" src="../src/image/trash.svg" alt="" /></div></div>`;
   });
   return semestersHTML;
 };

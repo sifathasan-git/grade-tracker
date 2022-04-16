@@ -4,8 +4,8 @@ const { User } = require("../models/user");
 const express = require("express");
 const router = express.Router();
 
-router.get("/", async (req, res) => {
-  const semesters = await Semester.find().sort("-_id");
+router.get("/:id", async (req, res) => {
+  const semesters = await Semester.find({ user: req.params.id }).sort("-_id");
   res.send(semesters);
 });
 
@@ -13,7 +13,8 @@ router.post("/", async (req, res) => {
   const name = req.body.name;
   const user = req.body.user;
   const courses = req.body.courses;
-  let semester = new Semester({ name, user, courses });
+  const isActive = true;
+  let semester = new Semester({ name, user, courses, isActive });
   semester = await semester.save();
 
   await User.findByIdAndUpdate(
@@ -29,7 +30,15 @@ router.post("/", async (req, res) => {
 router.put("/:id", async (req, res) => {
   const semester = await Semester.findByIdAndUpdate(
     req.params.id,
-    { name: req.body.name },
+    { isActive: req.body.active },
+    {
+      new: true,
+    }
+  );
+
+  const courses = await Course.updateMany(
+    { user: req.body.userid, semester: req.params.id },
+    { isActive: req.body.active },
     {
       new: true,
     }
@@ -54,6 +63,14 @@ router.delete("/:id", async (req, res) => {
   res.send(semester);
 });
 
+router.delete("/:semesterId/:courseId", async (req, res) => {
+  const semester = await Semester.findByIdAndRemove(req.params.semesterId);
+  const courses = semester.courses.id(req.params.courseId);
+  courses.remove();
+  semester.save();
+
+  res.send(semester);
+});
 router.get("/:id", async (req, res) => {
   const semester = await Semester.findById(req.params.id).select("-__v");
 
