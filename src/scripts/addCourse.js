@@ -17,6 +17,7 @@ export const addCourseWindowRender = (e) => {
         <option value="C-,1.7">C-</option>
         <option value="D+,1.3">D+</option>
         <option value="D,1">D</option>
+        <option value="F,0">F</option>
       </select>
       <div class="button">
         <button id="saveBtn">Save</button>

@@ -15,12 +15,13 @@ import {
   deleteSemesterCourses,
   deleteCourse,
 } from "./update.js";
-import { renderCgpa } from "./cgpaCredit.js";
+import { renderCgpa, renderCredit } from "./cgpaCredit.js";
 
 const logout = document.getElementById("logout");
 const semesterDiv = document.getElementById("semesters");
 const gradecardsDiv = document.getElementById("gradeCards");
 const cgpaDiv = document.getElementById("cgpa");
+const creditDiv = document.getElementById("creditInfo");
 const title = document.getElementById("title");
 const addWindow = document.getElementById("addWindow");
 const addWindowBtn = document.getElementById("addWindowBtn");
@@ -38,6 +39,7 @@ const runScript = async () => {
   addWindowBtn.innerHTML = "Add Semester";
   gradecardsDiv.innerHTML = renderGradecard(courses);
   cgpaDiv.innerHTML = renderCgpa(courses);
+  creditDiv.innerHTML = renderCredit(courses);
 
   //add semester
   addWindowBtn.addEventListener("click", (e) => {
@@ -83,6 +85,7 @@ const runScript = async () => {
           let courses = await fetchCourses(userid);
           gradecardsDiv.innerHTML = renderGradecard(courses);
           cgpaDiv.innerHTML = renderCgpa(courses);
+          creditDiv.innerHTML = renderCredit(courses);
         }
       });
     }
@@ -150,8 +153,10 @@ async function semesterCourseView(semesters, semesterId) {
     addWindowBtn.innerHTML = "Add Course";
     semesterDiv.innerHTML = renderCourses(currentSemesterCourses);
 
+    //edit course
     semesterDiv.addEventListener("click", async (e) => {
       let id;
+      console.log(e.target.className);
       if (e.target.id) {
         id = e.target.id;
       } else if (
@@ -160,7 +165,7 @@ async function semesterCourseView(semesters, semesterId) {
       )
         id = e.target.parentElement.id;
       else id = e.target.parentElement.parentElement.id;
-      if (id.length >= 18 && e.target.className !== "semesterDelete") {
+      if (id.length >= 18 && e.target.className !== "courseDelete") {
         let renderWindow = await editCourseWindowRender(id);
         addWindow.innerHTML = renderWindow;
 
@@ -190,6 +195,7 @@ async function semesterCourseView(semesters, semesterId) {
               let courses = await fetchCourses(userid);
               gradecardsDiv.innerHTML = renderGradecard(courses);
               cgpaDiv.innerHTML = renderCgpa(courses);
+              creditDiv.innerHTML = renderCredit(courses);
               addWindow.innerHTML = "";
               semesterCourseView(semesters, semesterId);
             }
@@ -214,7 +220,12 @@ async function semesterCourseView(semesters, semesterId) {
       const userid = localStorage.getItem("gradeTrackerUserid");
       const id = e.target.parentElement.parentElement.parentElement.id;
       const active = e.target.checked;
-      const deactiveCourse = await activeDeactiveCourse(id, userid, active);
+      const deactiveCourse = await activeDeactiveCourse(
+        id,
+        userid,
+        active,
+        semesterId
+      );
       if (deactiveCourse) {
         const currentSemesterCourses = await fetchSemesterCourses(
           semesterId,
@@ -226,6 +237,7 @@ async function semesterCourseView(semesters, semesterId) {
         let courses = await fetchCourses(userid);
         gradecardsDiv.innerHTML = renderGradecard(courses);
         cgpaDiv.innerHTML = renderCgpa(courses);
+        creditDiv.innerHTML = renderCredit(courses);
       }
     });
   });
@@ -247,6 +259,7 @@ async function semesterCourseView(semesters, semesterId) {
           let courses = await fetchCourses(userid);
           gradecardsDiv.innerHTML = renderGradecard(courses);
           cgpaDiv.innerHTML = renderCgpa(courses);
+          creditDiv.innerHTML = renderCredit(courses);
         }
       }
     });

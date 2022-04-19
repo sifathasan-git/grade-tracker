@@ -6,10 +6,9 @@ export const activeDeactiveSemester = (id, userid, active) => {
   });
   return response;
 };
-export const activeDeactiveCourse = (id, userid, active) => {
-  console.log(id);
+export const activeDeactiveCourse = (id, userid, active, semesterId) => {
   const courseUrl = "http://localhost:3001/api/courses/" + id;
-  const data = { userid, active };
+  const data = { userid, active, semesterId };
   const response = axios.put(courseUrl, data).then((res) => {
     if (res.data) return res.data;
   });

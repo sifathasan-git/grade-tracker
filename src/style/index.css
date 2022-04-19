@@ -915,6 +915,10 @@ nav ul li a {
   overflow: hidden;
 }
 
+.semesterSection .topBar .semesterGpa {
+  font-size: 1.2rem;
+}
+
 .semesterSection .topBar h1 {
   display: -webkit-box;
   display: -ms-flexbox;

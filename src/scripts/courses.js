@@ -1,4 +1,6 @@
 export const renderCourses = (courses) => {
+  const gpa = semesterGpa(courses);
+  document.getElementById("semesterGpa").innerHTML = `Gpa: ${gpa}`;
   let coursesHTML = "";
   courses.forEach((course) => {
     let inActive = "";
@@ -14,6 +16,18 @@ export const renderCourses = (courses) => {
   return coursesHTML;
 };
 
+const semesterGpa = (courses) => {
+  let totalGradePoint = 0;
+  let totalCredit = 0;
+  courses.forEach((course) => {
+    if (course.isActive) {
+      totalGradePoint = totalGradePoint + course.credit * course.gradePoint;
+      totalCredit = totalCredit + course.credit;
+    }
+  });
+  const gpa = Number(totalGradePoint / totalCredit).toFixed(2);
+  return gpa;
+};
 export const getCourses = (semesters) => {
   let courses = [];
   semesters.forEach((element) => {

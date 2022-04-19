@@ -20,8 +20,10 @@ const semesterGpa = (courses) => {
   let totalGradePoint = 0;
   let totalCredit = 0;
   courses.forEach((course) => {
-    totalGradePoint = totalGradePoint + course.credit * course.gradePoint;
-    totalCredit = totalCredit + course.credit;
+    if (course.isActive) {
+      totalGradePoint = totalGradePoint + course.credit * course.gradePoint;
+      totalCredit = totalCredit + course.credit;
+    }
   });
   const gpa = Number(totalGradePoint / totalCredit).toFixed(2);
   return gpa;

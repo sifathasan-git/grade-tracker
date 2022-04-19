@@ -63,7 +63,10 @@ router.put("/:id", async (req, res) => {
       new: true,
     }
   );
-
+  const semester = await Semester.findById(req.body.semesterId);
+  const targetCourse = semester.courses.id(req.params.id);
+  targetCourse.isActive = req.body.active;
+  semester.save();
   if (!course)
     return res.status(404).send("The course with the given ID was not found.");
 
